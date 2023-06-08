@@ -1,0 +1,154 @@
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+
+    color: #ff070f;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(225,-23,0),
+                 1px 1px 0 rgb(196,-52,0),
+                 2px 2px 0 rgb(166,-82,0),
+                 3px 3px  0 rgb(136,-112,0),
+                 4px 4px 3px rgba(0,0,0,0.55),
+                 4px 4px 1px rgba(0,0,0,0.5),
+                 0px 0px 3px rgba(0,0,0,.2);
+ }
+
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  padding: 8px;
+  margin-right: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333333;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #428BCA;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #428BCA;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3071A9;
+}
+
+#filter-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#filter-buttons button {
+  margin-right: 10px;
+  background-color: pink;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+#filter-buttons button.active {
+  background-color: #428BCA;
+  color: #FFFFFF;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #ECECEC;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.6;
+}
+
+.high-priority {
+  background-color:red;
+}
+
+.medium-priority {
+  background-color: yellow;
+}
+
+.low-priority {
+  background-color: green;
+}
+
+.task-text {
+  flex: 1;
+}
+
+.deadline,
+.priority,
+.labels {
+  font-size: 14px;
+  color: black;
+}
+
+.labels {
+  font-style: italic;
+}
